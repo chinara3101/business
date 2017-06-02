@@ -1,0 +1,95 @@
+.header
+	+clearfix
+.site__name
+	float: left
+	padding: 0
+	margin: 0
+.header__logo
+	text-decoration: none
+	padding: 0
+	margin: 0	
+.photo__logo
+	display: block
+	width: 100%
+	height: auto
+.header__menu
+	display: block 
+	float: right
+	position: static
+	width: auto
+	background: transparent
+	z-index: 10
+	padding: 0
+	margin: 0 
+	+tablet
+		display: none
+		width: 200px
+		position: absolute
+		top: 73px
+		right: 0
+		z-index: 10
+		background: #000
+.menu__list
+	margin: 0
+	padding:  0
+	list-style: none
+.menu__item
+	display: inline-block
+	margin: 0
+	padding: 0 
+	+tablet
+		display: block
+.menu__link
+	display: block
+	padding: 34px 9px 53px 27px
+	color: #999
+	font-size: 15px
+	text-decoration: none
+	font-weight: bold
+	+tablet
+		display: block
+		padding: 15px 10px
+		color: #fff
+.menu__link:hover
+	color: #ff6666
+.menu-btn
+	float: right
+	width: 70px
+	height: 77px
+	position: relative
+	background: #000
+	display: none
+	+tablet
+		display: block
+		margin: 0
+.menu-btn__inner
+	width: 18px
+	height: 2px
+	background: #fff
+	position: absolute
+	top: 50%
+	left: 50%
+	margin: -1px  0 0 -9px
+.menu-btn__inner::before,.menu-btn__inner::after
+	content: ""
+	width: 18px
+	height: 2px
+	background: #fff
+	position: absolute
+	left: 0
+.menu-btn__inner::before
+	top: -5px
+.menu-btn__inner::after
+	bottom: -5px
+.menu__btn--is-active .menu-btn__inner
+	background: transparent
+.menu__btn--is-active::before
+	transform: rotate(45deg)
+	top: 0
+.menu__btn--is-active::after
+	transform: rotate(90deg)
+	bottom: 0
+
+
+
+

@@ -1,0 +1,8 @@
+mixin service(item)
+	
+		each item in services__item
+			.service
+				h4(class="title__service title__service--" + item.class)
+					a.service__link(href="#") #{item.title}
+				p.txt__service #{item.description}
+

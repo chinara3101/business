@@ -1,0 +1,5 @@
+*.rar
+*.zip
+studio/**/*
+.idea/**/*
+node_modules

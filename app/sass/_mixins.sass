@@ -1,0 +1,40 @@
+=clearfix
+	&::after
+		clear: both
+		content: ""
+		display: table
+	
+=placeholder()
+	&::-webkit-input-placeholder
+		@content
+	&:-moz-placeholder
+		@content
+	&::-moz-placeholder
+		@content
+	&:-ms-input-placeholder
+		@content	
+
+=position($top,$right,$bottom,$left)
+	position: absolute
+	left: $left
+	top: $top
+	right: $right
+	bottom: $bottom
+
+$mobile: 420px
+$phone: 600px
+$tablet: 840px
+$md: 1000px
+
+=mobile
+	@media screen and (max-width: $mobile)
+		@content
+=phone
+	@media screen and (max-width: $phone)
+		@content
+=tablet
+	@media screen and (max-width: $tablet)
+		@content
+=md
+	@media screen and (max-width: $md)
+		@content

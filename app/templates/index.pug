@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+	head
+		include includes/head.pug
+	body
+		include includes/vars.pug
+		include includes/mixins.pug
+		header.header
+			.container
+				h1.site__name
+					a.header__logo
+						img.photo__logo(src=`img/logo.png`, width="248", height="77", alt="" )
+				.menu-btn.menu-btn--not-active#menu-btn
+					span.menu-btn__inner
+				nav.menu.header__menu
+					ul.menu__list
+						each item in menu_items
+							li.menu__item: a.menu__link(href="#")= item
+		.main__banner
+			.container
+				h2.title__banner We Providing
+				p.subtitile__banner Social Media marketing for businesses
+				a.btn__banner free consultation
+		.container
+			h3.title__services About Us 
+			p.subtitle__services We are added our major Services
+			.services__block
+				+service(item)
+		footer.footer
+			.container
+				p.txt__footer Cssauthor.com © 2014 All Rights Reserved
+<script src='vendor/jquery-1.12.4.min.js'></script>
+<script src="js/core.js"></script>
